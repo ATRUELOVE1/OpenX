@@ -1,0 +1,45 @@
+/* ベーススタイル */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* ヘッダー */
+.header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* メインコンテンツエリア */
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* シミュレーション画像スタイル */
+.simulation-image {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #333;
+  margin-bottom: 20px;
+}
+
+/* テキストスタイル */
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 600px) {
+  .header,
+  .content {
+    padding: 10px;
+  }
+}

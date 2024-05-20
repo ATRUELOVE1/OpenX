@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenU ♡ OpenCAE Homepage</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <style>
+    /* "sample"テキストのスタイルを定義します */
+    .downloadlink1 {
+      color: blue; /* テキストの色を青に設定 */
+      text-decoration: underline; /* 下線を引く */
+      cursor: pointer; /* マウスカーソルをポインターに変更 */
+    }
+  </style>
+
+  <body>
+    <div class="logo">
+      <img src="OPENX.JPG" alt="openx Logo" />
+      <!-- 画像ファイル名を正確に指定してください -->
+      <!--<div class="logo-text">OpenCAE Homepage !</div>-->
+      <!-- ロゴのテキストをここに入力 -->
+    </div>
+    <header class="header">
+      <h1>OpenCAE Homepage</h1>
+    </header>
+
+    <main class="content">
+      <img
+        src="CFD_PROFELLOR.JPG"
+        alt="シミュレーション画像"
+        class="simulation-image"
+      />
+      <!-- ここに新しい画像を追加します -->
+      <!--<img src="OPENX.JPG" alt="OpenCAEの画像" class="simulation-image" /> -->
+      <p>Informations</p>
+    </main>
+
+    <!-- "this is "と"sample"を分けて、"sample"だけにリンクを設定します -->
+    <p>
+      This is
+      <span class="downloadlink1" id="downloadlink1">sample</span> informations.
+    </p>
+
+    <!-- JavaScriptを使用して、"sample"テキストがクリックされたときにPDFをダウンロードするようにします -->
+    <script>
+      document
+        .getElementById("downloadlink1")
+        .addEventListener("click", function () {
+          var a = document.createElement("a");
+          a.href = "studyaicoding.pdf";
+          a.download = "studyaicoding.pdf";
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        });
+    </script>
+  </body>
+</html>
